@@ -1,0 +1,17 @@
+html,
+body {
+	margin: 0;
+}
+
+main {
+	display: flex;
+	height: 100vh;
+}
+#list {
+	background-color: burlywood;
+	flex: 3;
+}
+#form {
+	background-color: aquamarine;
+	flex: 3;
+}
