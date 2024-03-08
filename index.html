@@ -13,18 +13,51 @@
 		/>
 	</head>
 	<body>
-		<h1>Task manager</h1>
+		<h1>Task Manager</h1>
 		<main>
 			<section id="list">A</section>
 			<section id="form">
-				<div class="mb-3">
+				<div class="mt-5">
 					<label class="form-label">Title</label>
 					<input type="text" class="form-control" id="inputTitle" />
 				</div>
+
+				<div class="mb-3">
+					<label class="form-label">Descrription</label>
+					<textarea rows="3" class="form-control" id="inputDescription">
+					</textarea>
+				</div>
+
 				<div class="mt-5">
-					<label class="form-label">Title</label>
-					<input type="text" class="form-control" id="inputTitle2" />
-					<button class="btn btn-primary">Save</button>
+					<label class="form-label">Start Date</label>
+					<input
+						type="datetime-local"
+						class="form-control"
+						id="inputStartDate"
+					/>
+				</div>
+
+				<div class="mt-5">
+					<label class="form-label">Budget</label>
+					<input type="number" class="form-control" id="inputBudget" />
+				</div>
+
+				<div class="mt-5">
+					<label class="form-label">Status</label>
+					<select type="text" class="form-control" id="inputStatus">
+						<option value="in-progress">In Progress</option>
+						<option value="queue">Queue</option>
+						<option value="terminated">Terminated</option>
+						<option value="finished">Finished</option>
+					</select>
+				</div>
+
+				<div class="mt-5">
+					<label class="form-label">Color</label>
+					<input type="color" class="form-control" id="inputColor" />
+				</div>
+				<div>
+					<button class="btn btn-primary" id="btnSave">Save</button>
 				</div>
 			</section>
 		</main>
@@ -32,5 +65,6 @@
 			src="https://code.jquery.com/jquery-3.7.1.min.js"
 			crossorigin="anonymous"
 		></script>
+		<script src="./scripts/app.js"></script>
 	</body>
 </html>
